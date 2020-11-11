@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Art from "./components/art";
+import ArtList from "./components/ArtList";
 
 const API_KEY = `apikey=${process.env.REACT_APP_API_KEY}&`;
 
@@ -13,7 +13,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    getArts('classification=any&size=50')
+    getArts("classification=any&size=50");
   }, []);
 
   const getArts = (query) => {
@@ -53,12 +53,7 @@ function App() {
         </form>
       </header>
       <p className="workCount">Showing {worksCount} Works</p>
-      <div className="art-container">
-        {art.map(
-          (art) =>
-            art.primaryimageurl && <Art key={art.id} id={art.id} data={art} />
-        )}
-      </div>
+      <ArtList list={art} />
     </main>
   );
 }

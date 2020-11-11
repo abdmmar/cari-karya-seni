@@ -1,6 +1,7 @@
 import React from "react";
 
 const Art = ({ id, data }) => {
+  console.log(data);
   const people = data.people === undefined ? "Unknown" : data.people[0].name;
 
   return (
@@ -10,8 +11,8 @@ const Art = ({ id, data }) => {
         <p className="artist">{people}</p>
         <h3 className="art-title">{data.title}</h3>
         <p className="art-class-medium">
-          {data.classification} • {data.medium}{" "}
-          {data.datebegin !== 0 ? `• ${data.datebegin}` : ""}
+          {data.classification} {data.medium !== null ? `• ${data.medium}` : ''}
+          {data.datebegin !== 0 ? `• ${data.datebegin}` : ''}
         </p>
       </div>
     </article>
