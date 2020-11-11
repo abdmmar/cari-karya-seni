@@ -13,32 +13,32 @@ html {
 }
 
 body {
-  width:100%;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  letter-spacing: -0,011em;
+  letter-spacing: -0, 011em;
   background-color: white;
   color: var(--text-color);
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main h3{
+main h3 {
   font-weight: 500;
 }
 
-.art-container{
+.art-container {
   -webkit-columns: 250px;
   columns: 250px;
   -webkit-column-gap: 20px;
-  column-gap: 20px
+  column-gap: 20px;
 }
 
 article {
@@ -49,24 +49,50 @@ article {
   background: #fff;
 }
 
-article p, article h3{
+article p,
+article h3 {
   margin: 10px 0;
 }
 
-img{
+img {
   width: 100%;
 }
 
-.art-class-medium{
+.art-class-medium {
   color: #999999;
 }
 
-.workCount{
+.workCount {
   color: #999999;
 }
 
-@media only screen and (max-width: 767px){
-  article{
+/* Search */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  margin: 50px 0 20px 0;
+}
+
+.search-box label h2{
+  font-weight: 500px;
+  margin-bottom: 50px;
+}
+
+.search-box input{
+  width: 100%;
+  padding: 20px 30px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+
+@media only screen and (max-width: 767px) {
+  article {
     text-align: center;
   }
 }
