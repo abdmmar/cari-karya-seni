@@ -1,7 +1,6 @@
 import React from "react";
 
 const Art = ({ id, data }) => {
-  console.log(data);
   const people = data.people === undefined ? "Unknown" : data.people[0].name;
 
   return (
