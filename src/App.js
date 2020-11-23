@@ -1,38 +1,15 @@
-import React, { useState, useEffect } from "react";
-
-import ArtList from "./components/ArtList";
-import Search from "./components/Search";
-
-const API_KEY = `apikey=${process.env.REACT_APP_API_KEY}&`;
-
-// const GET_ALL_CLASSS = `https://api.harvardartmuseums.org/classification?size=59${API_KEY}`;
-const GET_OBJECT = "https://api.harvardartmuseums.org/object?";
+import React from "react";
+import Home from "./components/Home";
 
 function App() {
-  const [art, setArt] = useState([]);
-  const [worksCount, setWorksCount] = useState(0);
-  
-
-  useEffect(() => {
-    getArts("classification=any&size=50");
-  }, []);
-
-  const getArts = (query) => {
-    fetch(`${GET_OBJECT}${API_KEY}${query}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setArt(data.records);
-        setWorksCount(data.info.totalrecords);
-      });
-  };
-
   return (
     <main>
-      <header className="search-box">
-        <Search onSubmit={getArts}/>
+      <header>
+        <a href="/">
+          <h2>🔎 Cari Karya Seni</h2>
+        </a>
       </header>
-      <p className="workCount">Showing {worksCount} Works</p>
-      <ArtList list={art} />
+      <Home />
     </main>
   );
 }
