@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.dae89d16.chunk.css",
-    "main.js": "/static/js/main.e16ce924.chunk.js",
-    "main.js.map": "/static/js/main.e16ce924.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fbe53a01.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fbe53a01.js.map",
-    "static/js/2.42648717.chunk.js": "/static/js/2.42648717.chunk.js",
-    "static/js/2.42648717.chunk.js.map": "/static/js/2.42648717.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.dae89d16.chunk.css.map": "/static/css/main.dae89d16.chunk.css.map",
-    "static/js/2.42648717.chunk.js.LICENSE.txt": "/static/js/2.42648717.chunk.js.LICENSE.txt"
+    "main.css": "/cari-karya-seni/static/css/main.175fce50.chunk.css",
+    "main.js": "/cari-karya-seni/static/js/main.75c061d4.chunk.js",
+    "main.js.map": "/cari-karya-seni/static/js/main.75c061d4.chunk.js.map",
+    "runtime-main.js": "/cari-karya-seni/static/js/runtime-main.2b275808.js",
+    "runtime-main.js.map": "/cari-karya-seni/static/js/runtime-main.2b275808.js.map",
+    "static/js/2.837d721b.chunk.js": "/cari-karya-seni/static/js/2.837d721b.chunk.js",
+    "static/js/2.837d721b.chunk.js.map": "/cari-karya-seni/static/js/2.837d721b.chunk.js.map",
+    "index.html": "/cari-karya-seni/index.html",
+    "static/css/main.175fce50.chunk.css.map": "/cari-karya-seni/static/css/main.175fce50.chunk.css.map",
+    "static/js/2.837d721b.chunk.js.LICENSE.txt": "/cari-karya-seni/static/js/2.837d721b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbe53a01.js",
-    "static/js/2.42648717.chunk.js",
-    "static/css/main.dae89d16.chunk.css",
-    "static/js/main.e16ce924.chunk.js"
+    "static/js/runtime-main.2b275808.js",
+    "static/js/2.837d721b.chunk.js",
+    "static/css/main.175fce50.chunk.css",
+    "static/js/main.75c061d4.chunk.js"
   ]
 }
