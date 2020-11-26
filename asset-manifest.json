@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/cari-karya-seni/static/css/main.175fce50.chunk.css",
-    "main.js": "/cari-karya-seni/static/js/main.51ea45b0.chunk.js",
-    "main.js.map": "/cari-karya-seni/static/js/main.51ea45b0.chunk.js.map",
+    "main.css": "/cari-karya-seni/static/css/main.26938ead.chunk.css",
+    "main.js": "/cari-karya-seni/static/js/main.5bea1122.chunk.js",
+    "main.js.map": "/cari-karya-seni/static/js/main.5bea1122.chunk.js.map",
     "runtime-main.js": "/cari-karya-seni/static/js/runtime-main.2b275808.js",
     "runtime-main.js.map": "/cari-karya-seni/static/js/runtime-main.2b275808.js.map",
     "static/js/2.837d721b.chunk.js": "/cari-karya-seni/static/js/2.837d721b.chunk.js",
     "static/js/2.837d721b.chunk.js.map": "/cari-karya-seni/static/js/2.837d721b.chunk.js.map",
     "index.html": "/cari-karya-seni/index.html",
-    "static/css/main.175fce50.chunk.css.map": "/cari-karya-seni/static/css/main.175fce50.chunk.css.map",
+    "static/css/main.26938ead.chunk.css.map": "/cari-karya-seni/static/css/main.26938ead.chunk.css.map",
     "static/js/2.837d721b.chunk.js.LICENSE.txt": "/cari-karya-seni/static/js/2.837d721b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2b275808.js",
     "static/js/2.837d721b.chunk.js",
-    "static/css/main.175fce50.chunk.css",
-    "static/js/main.51ea45b0.chunk.js"
+    "static/css/main.26938ead.chunk.css",
+    "static/js/main.5bea1122.chunk.js"
   ]
 }
