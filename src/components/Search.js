@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Search = ({ setQuery, setPage, setList, worksCount }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(
+    localStorage.getItem("searchValue") || ""
+  );
+
+  useEffect(() => {
+    localStorage.setItem("searchValue", searchTerm);
+  }, [searchTerm]);
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
 
     setList([]);
-    setQuery(`q=${searchTerm}&page=`);
+    setQuery(`keyword=${searchTerm}&page=`);
     setPage(1);
   };
 
@@ -17,7 +23,7 @@ const Search = ({ setQuery, setPage, setList, worksCount }) => {
 
   return (
     <div className="search-box">
-      <form onSubmit={handleOnSubmit}>
+      <form onSubmit={handleOnSubmit} method="POST">
         <input
           type="search"
           id="search"

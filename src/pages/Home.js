@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Search from "./Search";
-import Loader from "./Loader";
-import ArtList from "./ArtList";
+import Search from "../components/Search";
+import Loader from "../components/Loader";
+import ArtList from "../components/ArtList";
 
 const API_KEY = `apikey=${process.env.REACT_APP_API_KEY}&`;
 
@@ -10,15 +10,18 @@ const API_KEY = `apikey=${process.env.REACT_APP_API_KEY}&`;
 const GET_OBJECT = "https://api.harvardartmuseums.org/object?";
 
 const Home = () => {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([{}]);
   const [worksCount, setWorksCount] = useState(0);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
-  const [query, setQuery] = useState("classification?&size=20&page=");
+  const [query, setQuery] = useState(
+    `keyword=${localStorage.getItem("searchValue")}&page=` ||
+      "classification?&size=20&page="
+  );
 
   useEffect(() => {
     const getArts = (query, page) => {
-      fetch(`${GET_OBJECT}${API_KEY}${query}${page}`)
+      fetch(`${GET_OBJECT}${API_KEY}${query}${page}&sort=rank&sortorder=asc`)
         .then((response) => response.json())
         .then(({ info, records }) => {
           setList((l) => [...l, ...records]);
